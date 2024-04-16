@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Noto Sans' , sans-serif;
+    src: url(Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* Scroll Bar Design */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+body {
+    background-color: white;
+    /* hide the bottom scroll bar */
+    overflow-x: hidden;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 15px;
+
+}
+
+#imageContainer {
+    width: 500px;
+    height: 440px;
+    border: 2px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+#imageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 90%;
+    height: 90%;
+    display: none;
+}
+
+label {
+    bottom: 20px;
+    font-size: 20px;
+}
+
+#imageContainer .upload-text {
+    position: absolute;
+    text-align: center;
+}
+
+
+.myBTN {
+    width: 480px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.controlsButton {
+    width: 143px;
+    height: 39px;
+    margin: 10px;
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #4f4c5e;
+    color: #ffffff;
+    border: none;
+    outline: none;
+
+}
+
+.myBTN {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.controlsButton {
+    padding: 6px 16px;
+    margin: 3px 6px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background-color: #4f4c5e;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.controlsButton:hover {
+    background-color: #2a93d5;
+}
+
+.size {
+    margin: 5px;
+    font-size: large;
+}
+
+.mycloud {
+    border: 1px solid;
+    width: 60%;
+    height: 50%;
+}
+
+.upload-icon {
+    width: 25%;
+    height: 36%;
+    background-image: url('CloudUploading.webp');
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+/* Media queries for tablet screens like iPads */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    #imageContainer {
+        width: 80%;
+        height: 200px;
+    }
+
+    .myBTN {
+        width: 80%;
+    }
+
+    .controlsButton {
+        width: 40%;
+    }
+}
+
+.about > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about > p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about > p > a {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0;
+    color: #4f4c5e;
+    text-decoration: none;
+}
+
+
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #imageContainer {
+        width: 60%;
+        height: 150px;
+    }
+
+    .myBTN {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .controlsButton {
+        width: 60%;
+        margin: 5px 0;
+    }
+
+    label {
+        font-size: 10px;
+    }
+}
